@@ -1,0 +1,1 @@
+console.log("fisrt program in js");
