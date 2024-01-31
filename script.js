@@ -1,17 +1,9 @@
-let a;
-a=5;
-let b=4;
-let c=a+b;
-console.log("a=",a)
-console.log("b=",b)
-console.log("a+b=",c);
-c=a*b;
-console.log("a*b=",c);
-c=a-b;
-console.log("a-b=",c);
-c=a/b;
-console.log("a/b=",c);
-c=a**b;
-console.log("a^b=",c);
-c=a%b;
-console.log("a mod b=",c);
+const student={
+    name:"Ali",
+    age:18,
+ispass:true,
+};
+
+console.log("detail of student", student)
+
+console.log(student["age"]);
