@@ -1,17 +1,10 @@
-// for in use
-// let student={
-//     name:"qasim",
-//     age:20,
-//     cgpa :4
-// }
+let num="23";
+let usernum=prompt("Guess the number");
 
-// for(let i in student){
-//     console.log(i,student[i]);
-// }
-
-// for of use
-let name="qasim";
-
-for (let i of name ){
-    console.log("i=",i);
+for (let i of usernum){
+    if (num!=usernum){
+        usernum=prompt("Try again ");
+    
+    }
 }
+console.log("congratulations you find the numvber");
