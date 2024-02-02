@@ -1,15 +1,17 @@
-// program that take username and create new username by concatinating with @ and length.
+// for in use
+// let student={
+//     name:"qasim",
+//     age:20,
+//     cgpa :4
+// }
 
+// for(let i in student){
+//     console.log(i,student[i]);
+// }
 
-let name=prompt("Enter your Name");
-// concatination 
-let username= "@"+name.concat(name.length); 
+// for of use
+let name="qasim";
 
-// console.log(name.slice(2,3));
-// console.log(name.replace("s","z"));
-// console.log(name.trim)
-// name.charAt(0);
-
-
-
-alert("Your username is "+username);
+for (let i of name ){
+    console.log("i=",i);
+}
