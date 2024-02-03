@@ -1,12 +1,11 @@
-// program to find the average of the given numbers
+// program to change sales value in an arrays
 
-let marks=[56,42,45,65,24,6];
-let sum=0;
-for(let i of marks){
-    sum=sum+i;
+let items=[234,54,256,432,12,456];
 
-}
-console.log(sum);
-let avg= sum/marks.length;
-// String special template
-console.log(`The average of the number is ${avg}`); 
+for(let i = 0 ; i<items.length ; i++){
+    let before =items[i];
+    let after=items[i]/10;
+    
+    items[i]=items[i]-after;
+    console.log(`The sales ${before} is 10% off ${items[i]}`);
+} 
