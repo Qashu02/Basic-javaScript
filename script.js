@@ -1,10 +1,12 @@
-let num="23";
-let usernum=prompt("Guess the number");
+// program to find the average of the given numbers
 
-for (let i of usernum){
-    if (num!=usernum){
-        usernum=prompt("Try again ");
-    
-    }
+let marks=[56,42,45,65,24,6];
+let sum=0;
+for(let i of marks){
+    sum=sum+i;
+
 }
-console.log("congratulations you find the numvber");
+console.log(sum);
+let avg= sum/marks.length;
+// String special template
+console.log(`The average of the number is ${avg}`); 
