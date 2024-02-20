@@ -1,17 +1,11 @@
-let n= prompt("Enter a number");
-let arr=[];
-for(let i =1; i<=n ;i++){
-     arr[i-1]=i;
-  
-}
-// reduce method use to take multiple input and generate single output like this
+// accessing h2 html element using java script 
 
-let sum=arr.reduce((prev ,curr)=>{
-    return prev+curr;
-})
-let product=arr.reduce((prev,curr)=>{
-    return prev*curr;
-})
-console.log(arr);
-console.log(sum);
-console.log(product);
+//  tagName used to access the element name
+// innerText : used for changing and accessing the pure text from html 
+// innerHtml : used for accesing and adding the html element
+// textContent : used for accessing the hidden text 
+let heading=document.body.querySelector("h2");
+// for properties 
+console.dir(heading);   
+console.log(heading);
+heading.innerText= heading.innerText +" from apna college";
