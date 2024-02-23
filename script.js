@@ -1,9 +1,15 @@
-//  creating div and accessing it through js 
-
-let box= document.body.querySelectorAll("div");
-
-let idx=1;
-for( let el  of box){
-el.innerText= el.innerText+` unique val is ${idx}`;
-idx++;
-}
+let box = document.querySelector(".box");
+let curr="blue"
+let btn= document.querySelector("#btn");
+box.addEventListener('click',()=>{
+    if (curr==="blue"){
+        curr="red";
+box.classList.add("red");
+box.classList.remove("blue");
+    }
+    else{
+        curr="blue";
+        box.classList.add("blue");
+     box.classList.remove("red");
+    }
+});
